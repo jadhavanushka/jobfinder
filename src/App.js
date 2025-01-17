@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Stats from './components/Stats';
 import Categories from './components/Categories';
 import JobSection from './components/JobsSection';
+import Feedbacks from './components/Feedbacks';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Stats />
       <Categories />
       <JobSection />
+      <Feedbacks />
 
     </div>
   );
