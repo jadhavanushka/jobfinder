@@ -55,7 +55,7 @@ const jobCategories = [
 
 const Categories = () => {
     return (
-        <section className='max-w-screen-xl px-4 py-16 mx-auto lg:mt-16 flex flex-col items-center bg-white'>
+        <section className='max-w-screen-xxl px-4 py-16 mx-auto lg:mt-16 flex flex-col items-center bg-white'>
             <h2 className="mb-4 text-3xl font-bold leading-tight tracking-tight text-gray-900  md:text-4xl">
                 Popular Job Categories
             </h2>

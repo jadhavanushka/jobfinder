@@ -3,7 +3,7 @@ import { BiSearchAlt, BiSolidUserPlus, BiSolidFilePlus } from 'react-icons/bi';
 
 const Steps = () => {
     return (
-        <section className='max-w-screen-xl px-4 py-16 mx-auto lg:mt-16 flex flex-col items-center bg-white'>
+        <section className='max-w-screen-xxl px-4 py-16 mx-auto flex flex-col items-center bg-white'>
             <h2 className="mb-12 text-3xl font-bold leading-tight tracking-tight text-gray-900  md:text-4xl">
                 How it works?
             </h2>

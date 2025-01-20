@@ -41,8 +41,8 @@ const StarRating = ({ rating }) => {
 
 const Feedbacks = () => {
     return (
-        <section className='max-w-screen-xl px-4 py-16 mx-auto lg:mt-16 flex flex-col items-center'>
-            <h2 className="mb-12 text-3xl font-bold leading-tight tracking-tight text-gray-900  md:text-4xl">
+        <section className='max-w-screen-xl px-4 py-16 mx-auto flex flex-col items-center'>
+            <h2 className="mb-12 text-3xl font-bold leading-tight tracking-tight text-gray-900 md:text-4xl">
                 What do they say about us?
             </h2>
             <div className='grid max-w-screen-xl md:px-4 mx-auto md:grid-cols-12 mb-8'>

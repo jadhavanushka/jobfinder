@@ -44,7 +44,7 @@ const Navbar = () => {
             ${isMenuOpen ? 'block' : 'hidden'}`}
                 >
                     <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white">
-                        {["Find job", "Employers", "Blog", "About", "Contact"].map((item, index) => (
+                        {["Find job", "Employers", "Blogs", "About", "Contact"].map((item, index) => (
                             <li className="block py-2 px-3 text-gray-900 rounded hover:text-teal-600 md:p-0"
                                 key={index}>
                                 {item}
