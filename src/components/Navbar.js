@@ -17,13 +17,15 @@ const Navbar = () => {
                 <div className="flex md:order-2 space-x-3 rtl:space-x-reverse">
                     <button
                         type="button"
-                        className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-4 py-2 text-center"
+                        className="text-teal-600 bg-white border-2 border-teal-600 focus:outline-none hover:bg-teal-50 hover:text-teal-700 focus:ring-4 focus:ring-teal-100 
+                        font-medium rounded-lg text-sm px-4 py-2 text-center"
                     >
                         Post a Job
                     </button>
                     <button
                         type="button"
-                        className="text-white bg-teal-600 hover:bg-teal-700 focus:ring-4 focus:outline-none focus:ring-teal-300 font-medium rounded-lg text-sm px-4 py-2 text-center"
+                        className="text-white bg-teal-600 hover:bg-teal-700 focus:ring-4 focus:outline-none focus:ring-teal-300 
+                        font-medium rounded-lg text-sm px-4 py-2 text-center"
                     >
                         Login
                     </button>
@@ -45,7 +47,7 @@ const Navbar = () => {
                 >
                     <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white">
                         {["Find job", "Employers", "Blogs", "About", "Contact"].map((item, index) => (
-                            <li className="block py-2 px-3 text-gray-900 rounded hover:text-teal-600 md:p-0"
+                            <li className="block py-2 px-3 text-gray-900 rounded hover:text-teal-600 md:p-0 hover:cursor-pointer"
                                 key={index}>
                                 {item}
                             </li>

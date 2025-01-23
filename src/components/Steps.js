@@ -1,9 +1,9 @@
 import React from 'react';
-import { BiSearchAlt, BiSolidUserPlus, BiSolidFilePlus } from 'react-icons/bi';
+import { BiSearchAlt, BiSolidUserPlus, BiSolidFilePlus, BiRightArrowAlt } from 'react-icons/bi';
 
 const Steps = () => {
     return (
-        <section className='max-w-screen-xxl px-4 py-16 mx-auto flex flex-col items-center bg-white'>
+        <section className='max-w-screen-xxl px-12 lg:px-40 py-16 mx-auto flex flex-col items-center bg-white'>
             <h2 className="mb-12 text-3xl font-bold leading-tight tracking-tight text-gray-900  md:text-4xl">
                 How it works?
             </h2>
@@ -46,8 +46,9 @@ const Steps = () => {
 
 
             <button className="text-white bg-teal-600 hover:bg-teal-700 focus:ring-4 focus:ring-teal-300 hover:text-white
-                    font-medium rounded-lg text-base px-6 py-2.5 text-center inline-flex items-center justify-center">
-                Get started</button>
+                    font-medium rounded-lg  ps-6 pe-4 py-2.5 flex items-center justify-center">
+                Get started <BiRightArrowAlt className='size-6 ms-1'/>
+                </button>
         </section>
     );
 };

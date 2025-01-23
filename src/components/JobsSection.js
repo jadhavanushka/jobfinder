@@ -1,5 +1,6 @@
 import React from 'react';
 import JobCard from './JobCard';
+import { BiRightArrowAlt } from 'react-icons/bi';
 
 const jobsData = [
     {
@@ -87,11 +88,11 @@ const jobsData = [
 
 const JobSection = () => {
     return (
-        <section className='max-w-screen-xl px-4 py-8 mx-auto lg:mt-4 flex flex-col items-center'>
+        <section className='max-w-screen-xl px-4 py-16 mx-auto lg:mt-4 flex flex-col items-center'>
             <h2 className="mb-4 text-3xl font-bold leading-tight tracking-tight text-gray-900  md:text-4xl">
                 Explore Jobs
             </h2>
-            <p className="px-4 mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl text-center">
+            <p className="px-4 mb-6 text-gray-500 lg:mb-8 md:text-lg text-center">
                 Discover a vast array of exciting job opportunities across various industries and locations.</p>
 
             <div className='grid max-w-screen-xl md:px-4 mx-auto md:grid-cols-12 mb-8'>
@@ -103,10 +104,11 @@ const JobSection = () => {
                 }
             </div>
 
-            <button className="font-medium rounded-lg text-base px-6 py-2.5 text-center inline-flex items-center justify-center w-fit
-                    text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 
-                    focus:ring-gray-100">
-                View all</button>
+            <button className="font-medium rounded-lg ps-6 pe-4 py-2.5 flex items-center justify-center w-fit
+                  text-teal-600 bg-white border-2 border-teal-600 hover:text-teal-700 focus:outline-none hover:bg-teal-50 focus:ring-4 focus:ring-teal-100">
+                View all
+                <BiRightArrowAlt className='size-6 ms-1' />
+            </button>
 
         </section>
 

@@ -5,17 +5,17 @@ import headerimg from '../images/headerimg.svg';
 
 const Header = () => {
     return (
-        <section className="mt-24 lg:mt-16">
+        <section className="mt-24 lg:mt-16 bg-slate-50">
             <div className="grid max-w-screen-xl px-4 mx-auto md:gap-8 xl:gap-0 md:grid-cols-12">
                 <div className="mr-auto place-self-center md:col-span-7">
-                    <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl 
+                    <h1 className="max-w-2xl mb-4 text-4xl font-bold tracking-tight leading-none md:text-5xl xl:text-6xl 
                     text-center md:text-start px-12 md:px-0">
                         Find Your Perfect Fit & Launch Your Career</h1>
-                    <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl text-center md:text-start">
+                    <p className="max-w-2xl mb-6 text-gray-400 lg:mb-8 md:text-lg text-center md:text-start">
                         Building a community of passionate individuals who are eager to make a difference and
                         discover the next big move!</p>
 
-                    <div className="inline-flex items-center justify-center mb-4 w-full lg:w-2/3 px-4 md:px-0">
+                    <div className="inline-flex items-center justify-center mb-4 w-full lg:w-3/4 px-4 md:px-0">
                         <form className="flex w-full">
                             <div className="w-full">
                                 <div className="relative h-full">
@@ -30,10 +30,10 @@ const Header = () => {
                                 </div>
                             </div>
                             <button type="submit"
-                                className="px-5 py-3 text-base font-medium text-center text-white bg-teal-600 border-teal-600 border 
+                                className="px-8 py-3 text-base font-medium text-center text-white bg-teal-600 border-teal-600 border 
                                 cursor-pointer rounded-r-xl  hover:border-teal-700 hover:bg-teal-700
                                 focus:outline-none focus:ring-2  focus:border-teal-500 focus:ring-teal-700">
-                                Submit
+                                Search
                             </button>
                         </form>
                     </div>
@@ -44,7 +44,7 @@ const Header = () => {
                             'UI/UX',
                             'Human Resources',
                         ].map((tag, index) => (
-                            <p className="bg-teal-50 text-teal-600 text-sm px-2.5 py-0.5 rounded hover:bg-teal-100"
+                            <p className="bg-teal-50 text-teal-500 text-sm font-medium px-3 py-1 rounded hover:cursor-pointer hover:bg-teal-100 hover:text-teal-600"
                                 key={index}>
                                 {tag}
                             </p>

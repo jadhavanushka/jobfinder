@@ -6,7 +6,8 @@ import headerimg from '../images/headerimg.svg';
 const JobCard = ({ job }) => {
     return (
         <div className="mr-auto place-self-center md:col-span-6 lg:col-span-4 w-full h-full">
-            <div className="p-5 items-start bg-gray-50 rounded-lg shadow hover:shadow-lg hover:ring-1 hover:ring-teal-500 flex flex-col mb-2 md:m-2">
+            <div className="p-5 items-start bg-gray-50 rounded-lg shadow hover:shadow-lg hover:ring-1 
+            hover:cursor-pointer hover:ring-teal-500 flex flex-col mb-4 md:m-2">
                 <div className="flex flex-col w-full mb-4">
                     <div className='flex justify-between mb-2'>
                         <h3 className="text-start text-xl font-bold tracking-tight text-gray-900">
@@ -54,8 +55,8 @@ const JobCard = ({ job }) => {
                             </div>
                         </div>
                     </div>
-                    <button className="text-white bg-teal-600 hover:bg-teal-700 focus:ring-4 focus:ring-teal-300 hover:text-white
-                    font-medium rounded-lg text-base px-6 py-2.5 text-center inline-flex items-center justify-center">
+                    <button className="text-white bg-teal-600 hover:bg-teal-700 focus:ring-4 focus:ring-teal-300 
+                    font-medium rounded-lg px-6 py-2.5 flex items-center justify-center">
                         Apply</button>
                 </div>
             </div>

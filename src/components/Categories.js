@@ -1,5 +1,5 @@
 import React from 'react';
-import { BiCode, BiBarChart, BiLineChart, BiPalette, BiClipboard, BiDollar, BiPen } from 'react-icons/bi';
+import { BiCode, BiBarChart, BiLineChart, BiPalette, BiClipboard, BiDollar, BiPen, BiRightArrowAlt } from 'react-icons/bi';
 import { GoPeople } from 'react-icons/go';
 import { FaFilm } from 'react-icons/fa';
 
@@ -55,11 +55,11 @@ const jobCategories = [
 
 const Categories = () => {
     return (
-        <section className='max-w-screen-xxl px-4 py-16 mx-auto lg:mt-16 flex flex-col items-center bg-white'>
+        <section className='max-w-screen-xxl px-4 py-16 mx-auto flex flex-col items-center bg-white'>
             <h2 className="mb-4 text-3xl font-bold leading-tight tracking-tight text-gray-900  md:text-4xl">
                 Popular Job Categories
             </h2>
-            <p className="px-4 mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl text-center">
+            <p className="px-4 mb-6 text-gray-500 lg:mb-8 md:text-lg text-center">
                 Explore and take the first step towards your dream job!
             </p>
             <div className='grid max-w-screen-xl md:px-4 mx-auto md:grid-cols-12 mb-8'>
@@ -67,8 +67,8 @@ const Categories = () => {
                     jobCategories.map((item, index) =>
                     (
                         <div key={index} className='mr-auto place-self-center md:col-span-6 lg:col-span-4 w-full h-full'>
-                            <div className='p-5 items-center bg-teal-50 rounded-lg shadow hover:ring-1 hover:ring-teal-500 
-                            flex mb-2 md:m-2 gap-4 pr-24'>
+                            <div className='p-5 items-center bg-teal-50 rounded-lg shadow hover:ring-1 hover:ring-teal-500
+                            flex mb-2 md:m-2 gap-4 pr-24 hover:cursor-pointer'>
                                 <span className="text-white bg-teal-500 p-4 rounded-full text-3xl">
                                     <item.icon />
                                 </span>
@@ -85,6 +85,12 @@ const Categories = () => {
                     ))
                 }
             </div>
+
+ <button className="font-medium rounded-lg ps-6 pe-4 py-2.5 flex items-center justify-center w-fit
+                             text-teal-600 bg-white border-2 border-teal-600 hover:text-teal-700 focus:outline-none hover:bg-teal-50 focus:ring-4 focus:ring-teal-100">
+                View all
+                <BiRightArrowAlt className='size-6 ms-1' />
+            </button>
 
         </section>
     );

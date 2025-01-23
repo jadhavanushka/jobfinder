@@ -45,7 +45,7 @@ const Feedbacks = () => {
             <h2 className="mb-12 text-3xl font-bold leading-tight tracking-tight text-gray-900 md:text-4xl">
                 What do they say about us?
             </h2>
-            <div className='grid max-w-screen-xl md:px-4 mx-auto md:grid-cols-12 mb-8'>
+            <div className='grid max-w-screen-xl md:px-4 mx-auto md:grid-cols-12 mb-4'>
                 {
                     reviews.map((item, index) =>
                     (
