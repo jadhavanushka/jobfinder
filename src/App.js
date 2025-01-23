@@ -7,11 +7,11 @@ import JobSection from './components/JobsSection';
 import Steps from './components/Steps';
 import Feedbacks from './components/Feedbacks';
 import Blogs from './components/Blogs';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="App bg-gray-50 min-h-screen">
-
+    <div className="App bg-slate-100 min-h-screen">
       <Navbar />
       <Header />
       <Stats />
@@ -20,7 +20,7 @@ function App() {
       <Steps />
       <Feedbacks />
       <Blogs />
-
+      <Footer />
     </div>
   );
 }
