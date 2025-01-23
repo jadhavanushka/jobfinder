@@ -21,7 +21,8 @@ const Footer = () => {
                         </div>
                         <div>
                             <h2 className="mb-4 text-sm font-semibold text-gray-500 uppercase">Design Inspiration</h2>
-                            <a href="https://www.behance.net/uirayhan" className="text-gray-400 font-medium mb-4 flex items-center gap-2">
+                            <a href="https://www.behance.net/uirayhan" 
+                            className="text-gray-400 font-medium mb-4 flex items-center gap-2">
                                 <FaBehanceSquare className="size-5 text-gray-400" />
                                 <p className="hover:underline">Rayhan Raju </p>
                             </a>

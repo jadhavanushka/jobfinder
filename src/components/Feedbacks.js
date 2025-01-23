@@ -49,7 +49,8 @@ const Feedbacks = () => {
                 {
                     reviews.map((item, index) =>
                     (
-                        <div key={index} className='mr-auto place-self-center md:col-span-6 lg:col-span-4 w-full h-full'>
+                        <div key={index} className='mr-auto place-self-center md:col-span-6 lg:col-span-4 w-full h-full
+                        delay-150 duration-300 ease-in-out hover:-translate-y-0.5'>
                             <div className='p-5 items-start bg-white rounded-lg shadow hover:shadow-lg flex flex-col mb-2 md:m-2 gap-4'>
                                 <StarRating rating={item.rating} />
                                 <p className="mb-2 text-justify">

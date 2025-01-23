@@ -18,14 +18,14 @@ const Navbar = () => {
                     <button
                         type="button"
                         className="text-teal-600 bg-white border-2 border-teal-600 focus:outline-none hover:bg-teal-50 hover:text-teal-700 focus:ring-4 focus:ring-teal-100 
-                        font-medium rounded-lg text-sm px-4 py-2 text-center"
+                        font-medium rounded-lg text-sm px-4 py-2 text-center delay-150 duration-300 ease-in-out hover:-translate-y-0.5 hover:scale-105"
                     >
                         Post a Job
                     </button>
                     <button
                         type="button"
                         className="text-white bg-teal-600 hover:bg-teal-700 focus:ring-4 focus:outline-none focus:ring-teal-300 
-                        font-medium rounded-lg text-sm px-4 py-2 text-center"
+                        font-medium rounded-lg text-sm px-4 py-2 text-center delay-150 duration-300 ease-in-out hover:-translate-y-0.5 hover:scale-105"
                     >
                         Login
                     </button>
@@ -47,7 +47,8 @@ const Navbar = () => {
                 >
                     <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white">
                         {["Find job", "Employers", "Blogs", "About", "Contact"].map((item, index) => (
-                            <li className="block py-2 px-3 text-gray-900 rounded hover:text-teal-600 md:p-0 hover:cursor-pointer"
+                            <li className="block py-2 px-3 text-gray-900 rounded hover:text-teal-600 md:p-0 
+                            hover:cursor-pointer duration-300 ease-in-out hover:-translate-y-0.5"
                                 key={index}>
                                 {item}
                             </li>

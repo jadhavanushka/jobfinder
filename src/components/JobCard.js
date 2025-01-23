@@ -7,7 +7,8 @@ const JobCard = ({ job }) => {
     return (
         <div className="mr-auto place-self-center md:col-span-6 lg:col-span-4 w-full h-full">
             <div className="p-5 items-start bg-gray-50 rounded-lg shadow hover:shadow-lg hover:ring-1 
-            hover:cursor-pointer hover:ring-teal-500 flex flex-col mb-4 md:m-2">
+            hover:cursor-pointer hover:ring-teal-500 flex flex-col mb-4 md:m-2
+            delay-150 duration-300 ease-in-out hover:-translate-y-0.5">
                 <div className="flex flex-col w-full mb-4">
                     <div className='flex justify-between mb-2'>
                         <h3 className="text-start text-xl font-bold tracking-tight text-gray-900">
@@ -56,7 +57,8 @@ const JobCard = ({ job }) => {
                         </div>
                     </div>
                     <button className="text-white bg-teal-600 hover:bg-teal-700 focus:ring-4 focus:ring-teal-300 
-                    font-medium rounded-lg px-6 py-2.5 flex items-center justify-center">
+                    font-medium rounded-lg px-6 py-2.5 flex items-center justify-center
+                    delay-100 duration-300 ease-in-out hover:scale-[1.03]">
                         Apply</button>
                 </div>
             </div>

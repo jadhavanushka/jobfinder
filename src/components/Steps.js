@@ -46,7 +46,8 @@ const Steps = () => {
 
 
             <button className="text-white bg-teal-600 hover:bg-teal-700 focus:ring-4 focus:ring-teal-300 hover:text-white
-                    font-medium rounded-lg  ps-6 pe-4 py-2.5 flex items-center justify-center">
+                    font-medium rounded-lg  ps-6 pe-4 py-2.5 flex items-center justify-center
+                    delay-150 duration-300 ease-in-out hover:-translate-y-0.5 hover:scale-[1.03]">
                 Get started <BiRightArrowAlt className='size-6 ms-1'/>
                 </button>
         </section>

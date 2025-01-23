@@ -5,7 +5,7 @@ import headerimg from '../images/headerimg.svg';
 
 const Header = () => {
     return (
-        <section className="mt-24 lg:mt-16 bg-slate-50">
+        <section className="mt-24 lg:mt-16 bg-slate-50 transition-all">
             <div className="grid max-w-screen-xl px-4 mx-auto md:gap-8 xl:gap-0 md:grid-cols-12">
                 <div className="mr-auto place-self-center md:col-span-7">
                     <h1 className="max-w-2xl mb-4 text-4xl font-bold tracking-tight leading-none md:text-5xl xl:text-6xl 
@@ -31,7 +31,7 @@ const Header = () => {
                             </div>
                             <button type="submit"
                                 className="px-8 py-3 text-base font-medium text-center text-white bg-teal-600 border-teal-600 border 
-                                cursor-pointer rounded-r-xl  hover:border-teal-700 hover:bg-teal-700
+                                cursor-pointer rounded-r-xl  hover:border-teal-700 hover:bg-teal-700 duration-300 ease-in-out hover:scale-105
                                 focus:outline-none focus:ring-2  focus:border-teal-500 focus:ring-teal-700">
                                 Search
                             </button>
@@ -44,7 +44,8 @@ const Header = () => {
                             'UI/UX',
                             'Human Resources',
                         ].map((tag, index) => (
-                            <p className="bg-teal-50 text-teal-500 text-sm font-medium px-3 py-1 rounded hover:cursor-pointer hover:bg-teal-100 hover:text-teal-600"
+                            <p className="bg-teal-50 text-teal-500 text-sm font-medium px-3 py-1 rounded 
+                            hover:cursor-pointer hover:bg-teal-100 hover:text-teal-600 duration-300 ease-in-out hover:-translate-y-0.5"
                                 key={index}>
                                 {tag}
                             </p>

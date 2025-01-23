@@ -27,7 +27,8 @@ const Blogs = () => {
                 {
                     blogPosts.map((item, index) =>
                     (
-                        <div key={index} className='mr-auto place-self-center md:col-span-6 lg:col-span-4 w-full h-full hover:cursor-pointer'>
+                        <div key={index} className='mr-auto place-self-center md:col-span-6 lg:col-span-4 w-full h-full 
+                        hover:cursor-pointer delay-150 duration-300 ease-in-out hover:-translate-y-0.5'>
                             <div className='items-startrounded-lg flex flex-col md:m-2'>
                                 <img className="w-full h-52 rounded-lg object-cover " src={headerimg} alt="profile img" />
 
@@ -45,12 +46,13 @@ const Blogs = () => {
                 }
             </div>
 
-            <button className="font-medium rounded-lg ps-6 pe-4 py-2.5 flex items-center justify-center w-fit
-                             text-teal-600 bg-white border-2 border-teal-600 hover:text-teal-700 focus:outline-none hover:bg-teal-50 focus:ring-4 focus:ring-teal-100">
+            <button className="font-medium rounded-lg ps-6 pe-4 py-2.5 flex items-center justify-center w-fittext-teal-600 
+            text-teal-600 bg-white border-2 border-teal-600 focus:outline-none
+            hover:text-teal-700 hover:bg-teal-50 focus:ring-4 focus:ring-teal-100
+            delay-150 duration-300 ease-in-out hover:-translate-y-0.5 hover:scale-[1.03]">
                 View all
                 <BiRightArrowAlt className='size-6 ms-1' />
             </button>
-
         </section>
     );
 };

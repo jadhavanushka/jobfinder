@@ -68,7 +68,7 @@ const Categories = () => {
                     (
                         <div key={index} className='mr-auto place-self-center md:col-span-6 lg:col-span-4 w-full h-full'>
                             <div className='p-5 items-center bg-teal-50 rounded-lg shadow hover:ring-1 hover:ring-teal-500
-                            flex mb-2 md:m-2 gap-4 pr-24 hover:cursor-pointer'>
+                            flex mb-2 md:m-2 gap-4 pr-24 hover:cursor-pointer delay-150 duration-300 ease-in-out hover:-translate-y-0.5'>
                                 <span className="text-white bg-teal-500 p-4 rounded-full text-3xl">
                                     <item.icon />
                                 </span>
@@ -86,8 +86,10 @@ const Categories = () => {
                 }
             </div>
 
- <button className="font-medium rounded-lg ps-6 pe-4 py-2.5 flex items-center justify-center w-fit
-                             text-teal-600 bg-white border-2 border-teal-600 hover:text-teal-700 focus:outline-none hover:bg-teal-50 focus:ring-4 focus:ring-teal-100">
+            <button className="font-medium rounded-lg ps-6 pe-4 py-2.5 flex items-center justify-center w-fittext-teal-600 
+            text-teal-600 bg-white border-2 border-teal-600 focus:outline-none
+            hover:text-teal-700 hover:bg-teal-50 focus:ring-4 focus:ring-teal-100
+            delay-150 duration-300 ease-in-out hover:-translate-y-0.5 hover:scale-[1.03]">
                 View all
                 <BiRightArrowAlt className='size-6 ms-1' />
             </button>
