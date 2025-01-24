@@ -24,7 +24,7 @@ const Header = () => {
                                     </div>
                                     <input type="text"
                                         className="block w-full px-5 py-3 pl-11 text-base text-gray-900 bg-white border
-                                         border-gray-200
+                                         border-gray-200 focus:shadow-md
                                       placeholder:text-gray-400 rounded-l-xl focus:ring-teal-400 focus:border-teal-400"
                                         placeholder="Job title, keyword, etc." required />
                                 </div>
@@ -32,7 +32,7 @@ const Header = () => {
                             <button type="submit"
                                 className="px-8 py-3 text-base font-medium text-center text-white bg-teal-600 border-teal-600 border 
                                 cursor-pointer rounded-r-xl  hover:border-teal-700 hover:bg-teal-700 duration-300 ease-in-out hover:scale-105
-                                focus:outline-none focus:ring-2  focus:border-teal-500 focus:ring-teal-700">
+                                focus:outline-none focus:ring-2  focus:border-teal-500 focus:ring-teal-700 hover:shadow-md">
                                 Search
                             </button>
                         </form>

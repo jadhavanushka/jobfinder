@@ -1,14 +1,13 @@
 import React from 'react';
 import { BiCalendarAlt, BiDollarCircle } from 'react-icons/bi';
 import { GrLocation } from 'react-icons/gr';
-import headerimg from '../images/headerimg.svg';
 
 const JobCard = ({ job }) => {
     return (
         <div className="mr-auto place-self-center md:col-span-6 lg:col-span-4 w-full h-full">
             <div className="p-5 items-start bg-gray-50 rounded-lg shadow hover:shadow-lg hover:ring-1 
             hover:cursor-pointer hover:ring-teal-500 flex flex-col mb-4 md:m-2
-            delay-150 duration-300 ease-in-out hover:-translate-y-0.5">
+            duration-300 ease-in-out hover:-translate-y-0.5">
                 <div className="flex flex-col w-full mb-4">
                     <div className='flex justify-between mb-2'>
                         <h3 className="text-start text-xl font-bold tracking-tight text-gray-900">
@@ -43,7 +42,9 @@ const JobCard = ({ job }) => {
 
                 <div className='flex items-center gap-8 justify-between w-full'>
                     <div className='flex gap-2'>
-                        <img className="w-12 h-12 rounded-lg" src={headerimg} alt="Company logo" />
+                        
+                        <img className="w-12 h-12 rounded-lg object-cover bg-white" src={job.logo} alt="Company logo" />
+
                         <div className='flex flex-col'>
                             <p className="text-gray-500 font-bold text-start">{job.company}</p>
                             <div className='flex items-center'>

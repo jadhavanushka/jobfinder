@@ -89,7 +89,7 @@ const Categories = () => {
             <button className="font-medium rounded-lg ps-6 pe-4 py-2.5 flex items-center justify-center w-fittext-teal-600 
             text-teal-600 bg-white border-2 border-teal-600 focus:outline-none
             hover:text-teal-700 hover:bg-teal-50 focus:ring-4 focus:ring-teal-100
-            delay-150 duration-300 ease-in-out hover:-translate-y-0.5 hover:scale-[1.03]">
+            delay-150 duration-300 ease-in-out hover:-translate-y-0.5 hover:scale-[1.03] hover:shadow">
                 View all
                 <BiRightArrowAlt className='size-6 ms-1' />
             </button>

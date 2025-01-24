@@ -1,6 +1,8 @@
 import React from 'react';
-import headerimg from '../images/headerimg.svg';
 import { FaStar, FaRegStar } from 'react-icons/fa';
+import user1 from '../images/user1.jpg';
+import user2 from '../images/user2.jpg';
+import user3 from '../images/user3.jpg';
 
 
 const reviews = [
@@ -8,19 +10,22 @@ const reviews = [
         "rating": 5,
         "review": "Absolutely love this job finder! I found my dream job as a Software Engineer in just a week! The platform is intuitive, and the job listings were relevant to my skills. I truly feel supported throughout my job search journey.",
         "name": "Emily Johnson",
-        "job_title": "Software Engineer"
+        "job_title": "Software Engineer",
+        "photo": user1
     },
     {
         "rating": 4,
         "review": "This site has been incredibly helpful with a lot of opportunities available in my field. I truly appreciate the career tips section, which offered valuable advice on interviews and resume building.",
         "name": "Michael Smith",
-        "job_title": "Project Manager"
+        "job_title": "Project Manager",
+        "photo": user2
     },
     {
         "rating": 5,
         "review": "This site made my job search so much easier! I found a fantastic position as a Content Writer that perfectly matches my passion. I highly recommend it to anyone looking for new opportunities!",
         "name": "Sophia Davis",
-        "job_title": "Content Writer"
+        "job_title": "Content Writer",
+        "photo": user3
     }
 ];
 
@@ -57,7 +62,7 @@ const Feedbacks = () => {
                                     {item.review}
                                 </p>
                                 <div className='flex gap-2'>
-                                    <img className="w-12 h-12 rounded-lg" src={headerimg} alt="profile img" />
+                                    <img className="w-12 h-12 rounded-full object-cover" src={item.photo} alt="profile img" />
                                     <div className='flex flex-col'>
                                         <h3 className="text-start font-bold text-gray-900">
                                             {item.name}
