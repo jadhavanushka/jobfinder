@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { BiMenu } from 'react-icons/bi';
+import logo from '../images/logo.png';
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,9 +12,12 @@ const Navbar = () => {
     return (
         <nav className="bg-white fixed w-full z-20 top-0 start-0 shadow-sm">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <div className='flex items-center gap-2'>
+                <img className="w-10 h-10" src={logo} alt="logo" />
                 <h1 className="text-xl font-bold text-teal-600">
                     JobFinder
                 </h1>
+                </div>
                 <div className="flex md:order-2 space-x-3 rtl:space-x-reverse">
                     <button
                         type="button"
